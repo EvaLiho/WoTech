@@ -5,6 +5,6 @@ Read me file users markdown syntax to edit any text, formulas of codes
 ## Second level heading
 
 ## My skills
--Java
--Python
--GitHub
+- Java
+- Python
+- GitHub
