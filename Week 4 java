@@ -1,0 +1,114 @@
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+
+    Scanner scanner = new Scanner(System.in);
+     System.out.println("Write a number");
+    int a = scanner.nextInt();
+    System.out.println("Write another number");
+     int b = scanner.nextInt();
+    
+    System.out.println("A + B = " + (a + b));
+    
+    scanner.close(); // closing the channel
+    
+    //scanner.nextLine(); // Waits for us to provide a string until pressed enter 
+  }
+
+public class Main {
+  public static void main(String[] args) {
+
+    int amountOfTimesToDuck = 5;
+    while (amountOfTimesToDuck != 0){
+      System.out.println("Duck!");
+      amountOfTimesToDuck = amountOfTimesToDuck - 1;
+    }
+    System.out.println("Goose!");
+    
+  }
+}
+// "DIRTY" way
+public class Main {
+  public static void main(String[] args) {
+
+    int i = 1;
+    boolean isEven = false;
+    
+    while (i <= 5){
+      String evenOrOdd = "";
+      if (isEven == true){
+        evenOrOdd = "even";
+      }
+      else {
+        evenOrOdd = "odd";
+      }
+      System.out.println( i + " is " + evenOrOdd);
+      i = i + 1;
+      isEven = !isEven;
+    }
+    
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+
+    int i = 1;
+    boolean isEven = false;
+    
+    while (i <= 10){
+      String result = "";
+      if (i % 2 == 0){
+        result = "even";
+      }
+      else {
+        result = "odd";
+      }
+      System.out.println( i + " is " + result);
+      i = i + 1;
+     
+    }
+    
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+
+    // for-loop for ( defined, condition, action after every loop)
+    for (int i = 1; i <= 10; i = i + 1) {
+      System.out.println(i);
+    }
+}
+}
+
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+    
+    int answer = 30;
+    String result = "";
+    
+    // user guess input
+    Scanner scanner = new Scanner(System.in);
+     System.out.println("Guess the number");
+    int x = scanner.nextInt();
+
+    if (x == answer){System.out.println("Correct! The number is " + x);}
+    
+    while (x != answer){
+      if (x < answer){
+        result = "Too small";
+      }
+      else {
+        result = "Too big";
+      }
+      System.out.println("Not correct! " + x + " is " + result);
+      x = scanner.nextInt();
+      }
+    scanner.close();
+    }
+    }
+  
