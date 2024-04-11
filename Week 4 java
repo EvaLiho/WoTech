@@ -112,3 +112,25 @@ public class Main {
     }
     }
   
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+    
+    String text = "_";
+    
+    // user guess input
+    Scanner scanner = new Scanner(System.in);
+     System.out.println("Choose the size of the triange");
+    int x = scanner.nextInt();
+    
+    // for-loop for ( defined, condition, action after every loop)
+    for (int i = 1; i <= x; i = i + 1) {
+      System.out.println(text);
+      text = text + "_";
+
+      }
+    scanner.close();
+    }
+    }
+ 
