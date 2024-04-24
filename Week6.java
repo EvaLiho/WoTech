@@ -20,8 +20,8 @@ public class Main {
       System.out.println(name + " is invited");
       } else {System.out.println(name + " is not invited");
      
-              }
-           
+      }
+      scanner.close();     
     }
   }
 
