@@ -205,3 +205,65 @@ public class Main {
     }
 }
 ---------------------------------------------------------------------------------
+  import java.util.Scanner;
+public class Main {
+  public static void main(String[] args) {
+    int number1 = inputNumber();
+    int number2 = inputNumber();
+    int number3 = inputNumber();
+
+    int result = multiplication(number1, number2, number3); 
+
+    System.out.println(result);
+  }
+  public static int inputNumber() {
+      Scanner scanner = new Scanner(System.in);
+      System.out.println("Please enter a number: ");
+      return scanner.nextInt();
+  }
+  public static int multiplication(int a, int b, int c){
+    return a * b * c;
+  }
+}
+--------------------------------------------------------------------------------------------
+  import java.util.Scanner;
+public class Main {                        
+  public static void main(String[] args) { 
+
+    System.out.println("Please enter first name: ");
+    String firstName = getText();
+    System.out.println("Please enter first name: ");
+    String lastName = getText();
+    getFullName(firstName, lastName);
+  }
+  public static String getText() {
+    Scanner scanner = new Scanner(System.in); 
+    return scanner.nextLine();
+  }
+  public static void getFullName(String firstName, String lastName) {
+    System.out.println("The full name is: " + firstName + " " + lastName);
+  }
+}
+---------------------------------------------------------------------------------------------------
+  import java.util.Scanner;
+public class Main { 
+public static void main(String[] args) {
+
+  int a = inputNumber();
+  int b = inputNumber();
+
+  int smallest = smallestNumber(a, b);
+  System.out.println(smallest + " is the smallest number");
+  }
+
+  public static int inputNumber() {
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("Please enter a number: ");
+    return scanner.nextInt();
+    }
+
+  public static int smallestNumber(int a, int b) {
+    return Math.min(a, b);
+    }
+} 
+
