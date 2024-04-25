@@ -266,4 +266,24 @@ public static void main(String[] args) {
     return Math.min(a, b);
     }
 } 
+---------------------------------------------------------------------------------------------------------
+  import java.util.Scanner;
+public class Main {
+  public static void main(String[] args) {
+    int number1 = inputNumber();
+    int number2 = inputNumber();
+    int number3 = inputNumber();
 
+    int result = multiplication(number1, number2, number3); 
+
+    System.out.println(result);
+  }
+  public static int inputNumber() {
+      Scanner scanner = new Scanner(System.in);
+      System.out.println("Please enter a number: ");
+      return scanner.nextInt();
+  }
+  public static int multiplication(int a, int b, int c){
+    return a * b * c;
+  }
+}
