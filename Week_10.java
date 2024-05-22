@@ -132,3 +132,41 @@ public class Main {
       }
     }
   }
+________________________________________________________________________________________________________________________________________
+        // GROUP WORK MEDIUM - add 100 random numbers to list and filrter out the ones that devide by 2
+
+import java.util.ArrayList;
+import java.util.stream.Collectors;
+import java.util.Random;
+
+public class Main {
+  public static void main(String[] args) {
+
+    var listOfNumbers = new ArrayList<Integer>();
+
+    addRandomNumber(listOfNumbers);
+    
+    var filteredNumberList = new ArrayList<Integer>();
+      
+    for(int number: listOfNumbers){
+      if(number % 2 == 0){
+          filteredNumberList.add(number);
+      }
+    }
+    printArrayList(filteredNumberList);
+  }
+
+  public static void addRandomNumber(ArrayList<Integer> listOfNumbers) {
+      Random random = new Random();
+      for (int i = 0; i < 100; i++) {
+          int randomNumber = random.nextInt(1000);
+            listOfNumbers.add(randomNumber);
+      }
+  }
+  public static void printArrayList(ArrayList<Integer> listOfNumbers){
+      for (int number : listOfNumbers){
+        System.out.println(number);
+      }
+    }
+  }
+__________________________________________________________________________________________________________________________________________
