@@ -87,4 +87,48 @@ ________________________________________________________________________________
     printArrayList(filteredArrayList);
 _________________________________________________________________________________________
   
-  
+  // GROUP WORK EASY - add numbers to list and filrter out the ones that devide by 2
+
+import java.util.ArrayList;
+import java.util.stream.Collectors;
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+
+    var listOfNumbers = new ArrayList<Integer>();
+
+    System.out.println("Add a number to the list. Type '0' to exit.");
+    var scanner = new Scanner(System.in);
+
+    while(true){
+      int number = scanner.nextInt(); 
+      if (number==0 ){
+        break;
+      }
+      addItem(listOfNumbers, number);
+    }
+
+    printArrayList(listOfNumbers);
+    
+      var filteredNumberList = new ArrayList<Integer>();
+      
+    for(int number: listOfNumbers){
+      if(number % 2 == 0){
+          filteredNumberList.add(number);
+      }
+    }
+    printArrayList(filteredNumberList);
+  }
+
+  public static void addItem(ArrayList<Integer> listOfNumbers, int number)  {
+      listOfNumbers.add(number);
+    System.out.println(number + " has been added to the list");
+  }
+
+  public static void printArrayList(ArrayList<Integer> listOfNumbers){
+      for (int number : listOfNumbers){
+        System.out.println(number);
+      }
+    }
+  }
