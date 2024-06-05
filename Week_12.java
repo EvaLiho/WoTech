@@ -24,7 +24,7 @@ public class Main {
     var name = scanner.nextLine();
     System.out.println("Please input the description.");
     var description = scanner.nextLine();
-
+    scanner.close();
     var task = new Task(name, description);
     taskManager.addTask(task);
   }
